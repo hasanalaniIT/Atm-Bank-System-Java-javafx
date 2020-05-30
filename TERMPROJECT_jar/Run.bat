@@ -1,0 +1,1 @@
+java -jar TERMPROJECT.jar height=720 width=1280

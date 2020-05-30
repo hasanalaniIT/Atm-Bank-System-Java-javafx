@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="773.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserPageController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="25.0" layoutY="21.0" prefHeight="408.0" prefWidth="723.0" style="-fx-background-color: #661519;">
+          <children>
+            <Pane layoutX="30.0" layoutY="27.0" prefHeight="354.0" prefWidth="664.0" style="-fx-background-color: #2A2E37;">
+               <children>
+                  <Label layoutX="48.0" layoutY="73.0" style="-fx-text-fill: #B3373D;" text=" User ID" textFill="#c51162">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="37.0">
+                           <image>
+                              <Image url="@pics/icons/userid.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="138.0" style="-fx-text-fill: #B3373D;" text="  Username" textFill="#c51162">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="38.0">
+                           <image>
+                              <Image url="@pics/icons/username.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="194.0" style="-fx-text-fill: #B3373D;" text="  Balance" textFill="#c51162">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0">
+                           <image>
+                              <Image url="@pics/icons/balance%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <TextField fx:id="uid" editable="false" layoutX="224.0" layoutY="70.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-color: #661519; -fx-border-radius: 20; -fx-border-width: 3;" text="User ID">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="uname" editable="false" layoutX="224.0" layoutY="130.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-color: #661519; -fx-border-radius: 20; -fx-border-width: 3;" text="Username">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="ubalance" editable="false" layoutX="224.0" layoutY="187.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-color: #661519; -fx-border-radius: 20; -fx-border-width: 3;" text="Current Balance">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="505.0" layoutY="21.0" mnemonicParsing="false" onAction="#makeInfoButton" prefHeight="40.0" prefWidth="132.0" style="-fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-text-fill: white;" stylesheets="@pics/Styles.css" text="Load Info">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="32.0">
+                           <image>
+                              <Image url="@pics/icons/load.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="28.0" layoutY="283.0" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="132.0" style="-fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-text-fill: white;" stylesheets="@pics/Styles.css" text="Go Back">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="33.0">
+                           <image>
+                              <Image url="@pics/icons/go%20back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="145.0" fitWidth="170.0" layoutX="480.0" layoutY="210.0">
+                     <image>
+                        <Image url="@pics/Untitled.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="22.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/22111.png" />
+               </image>
+            </ImageView>
+          </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

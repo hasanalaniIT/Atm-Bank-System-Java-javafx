@@ -1,0 +1,32 @@
+
+.button {
+    -fx-font-weight: bold;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius:  50 50 50 50;
+    -fx-font-size:14;
+}
+
+.button:hover{
+    
+    
+    -fx-background-color: white;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-border-radius:  50 50 50 50;
+    
+    
+    
+}
+
+
+
+.button:pressed{
+    
+    -fx-background-color: white;
+    -fx-text-fill:  #FFFFFF;
+    
+    -fx-border-width: 4;
+    -fx-rotate: 4;
+    
+}

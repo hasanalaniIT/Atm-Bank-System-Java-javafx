@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <children>
+      <AnchorPane layoutX="32.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="960.0" style="-fx-background-color: #661519;">
+         <children>
+            <Pane layoutX="30.0" layoutY="30.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2A2E37;">
+               <children>
+                  <Button layoutX="347.0" layoutY="393.0" mnemonicParsing="false" onAction="#makeLogin" prefHeight="51.0" prefWidth="209.0" style="-fx-background-radius: 50 50 50 50; -fx-background-color: #B3373D;" stylesheets="@pics/Styles.css" text="Login" textFill="WHITE" />
+                  <PasswordField fx:id="password" layoutX="295.0" layoutY="257.0" prefHeight="51.0" prefWidth="313.0" promptText="Password" style="-fx-border-color: #B3373D; -fx-border-radius: 100 100 100 100; -fx-background-radius: 100 100 100 100; -fx-border-width: 3;" />
+                  <TextField fx:id="user" layoutX="295.0" layoutY="167.0" prefHeight="51.0" prefWidth="313.0" promptText="Username" style="-fx-border-color: #B3373D; -fx-border-radius: 100 100 100 100; -fx-background-radius: 100 100 100 100; -fx-border-width: 3;" />
+                  <RadioButton fx:id="rdbtnuser" layoutX="358.0" layoutY="325.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="86.0" selected="true" text="User">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="btn" />
+                     </toggleGroup>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#941414" />
+                              <Stop color="#df3c3c" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rdbtnadmin" layoutX="488.0" layoutY="322.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="86.0" text="Admin" textFill="#b3373d" toggleGroup="$btn">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></RadioButton>
+                  <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="232.0" layoutY="167.0">
+                     <image>
+                        <Image url="@pics/name_64px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="232.0" layoutY="257.0">
+                     <image>
+                        <Image url="@pics/show_password_64px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="label" layoutX="330.0" layoutY="458.0" prefHeight="51.0" prefWidth="301.0">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#df3c3c" />
+                              <Stop color="#9f8686" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Label>
+                  <ImageView fitHeight="128.0" fitWidth="159.0" layoutX="372.0">
+                     <image>
+                        <Image url="@pics/Untitled.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="835.0" layoutY="14.0" mnemonicParsing="false" onAction="#openAbout" prefHeight="44.0" prefWidth="19.0" style="-fx-background-radius: 100100100100; -fx-background-color: #B3373D;" stylesheets="@pics/Styles.css" textFill="WHITE">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@pics/icons/information.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </Pane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="449.0" prefWidth="565.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserPageController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="28.0" layoutY="23.0" prefHeight="404.0" prefWidth="509.0" style="-fx-background-color: #661519;">
+          <children>
+            <Pane layoutX="32.0" layoutY="27.0" prefHeight="355.0" prefWidth="447.0" style="-fx-background-color: #2A2E37;">
+               <children>
+                  <TextField fx:id="withdrawamount" layoutX="14.0" layoutY="112.0" prefHeight="45.0" prefWidth="269.0" promptText="\$" style="-fx-background-radius: 22; -fx-border-radius: 20; -fx-border-color: #661519; -fx-border-width: 3;">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="74.0" layoutY="169.0" mnemonicParsing="false" onAction="#makeWithdrawButton" prefHeight="47.0" prefWidth="150.0" style="-fx-background-color: #B3373D; -fx-background-radius: 30303030; -fx-text-fill: white;" stylesheets="@pics/Styles.css" text="Withdraw">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0">
+                           <image>
+                              <Image url="@pics/icons/withdraw.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="17.0" layoutY="60.0" prefHeight="45.0" prefWidth="225.0" style="-fx-text-fill: #B3373D;" text="Enter An Amount" textFill="#ff5252">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="withdrawinfo" layoutX="14.0" layoutY="221.0" prefHeight="64.0" prefWidth="419.0">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ff4b4b" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <ImageView fitHeight="128.0" fitWidth="139.0" layoutX="294.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@pics/Untitled.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="44.0" layoutX="220.0" layoutY="63.0">
+                     <image>
+                        <Image url="@pics/icons/amount.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="289.0" layoutY="294.0" mnemonicParsing="false" onAction="#goBack" prefHeight="47.0" prefWidth="150.0" style="-fx-background-color: #B3373D; -fx-background-radius: 30303030; -fx-text-fill: white;" stylesheets="@pics/Styles.css" text="Close">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="37.0">
+                           <image>
+                              <Image url="@pics/icons/Close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/4564544.png" />
+               </image>
+            </ImageView>
+          </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseMoved="#makeLabel" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserLoginController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="960.0" style="-fx-background-color: #661519;">
+         <children>
+            <AnchorPane fx:id="ancorpane" layoutX="30.0" layoutY="30.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2A2E37;">
+               <children>
+                  <Label fx:id="userlabel" ellipsisString="" layoutX="14.0" prefHeight="44.0" prefWidth="366.0">
+                     <font>
+                        <Font name="Segoe UI Black Italic" size="24.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#df3c3c" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button layoutX="577.0" layoutY="145.0" mnemonicParsing="false" onAction="#makeWithdrawButton" prefHeight="76.0" prefWidth="184.0" style="-fx-border-radius: 30303030; -fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-border-color: #C0C0C0; -fx-border-width: 3; -fx-text-fill: white;" stylesheets="@pics/UserStyles.css" text="Withdraw Money">
+                     <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="61.0">
+                           <image>
+                              <Image url="@pics/icons8_money_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="144.0" layoutY="272.0" mnemonicParsing="false" onAction="#makeTransferButton" prefHeight="76.0" prefWidth="184.0" style="-fx-border-radius: 30303030; -fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-border-color: #C0C0C0; -fx-border-width: 3; -fx-text-fill: white;" stylesheets="@pics/UserStyles.css" text="Transfer Money">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="69.0">
+                           <image>
+                              <Image url="@pics/icons8_initiate_money_transfer_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="144.0" layoutY="149.0" mnemonicParsing="false" onAction="#makeCheckBalButton" prefHeight="72.0" prefWidth="184.0" style="-fx-border-radius: 30303030; -fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-border-color: #C0C0C0; -fx-border-width: 3; -fx-text-fill: white;" stylesheets="@pics/UserStyles.css" text="Check Balance">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="69.0">
+                           <image>
+                              <Image url="@pics/icons8_check_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="83.0" layoutY="416.0" mnemonicParsing="false" onAction="#goBack" prefHeight="55.0" prefWidth="140.0" style="-fx-border-radius: 30303030; -fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-border-color: #C0C0C0; -fx-border-width: 3; -fx-text-fill: white;" stylesheets="@pics/UserStyles.css" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="47.0">
+                           <image>
+                              <Image url="@pics/icons8_go_50px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="669.0" layoutY="416.0" mnemonicParsing="false" onAction="#makeInfoButton" prefHeight="55.0" prefWidth="140.0" style="-fx-border-radius: 30303030; -fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-border-color: #C0C0C0; -fx-border-width: 3; -fx-text-fill: white;" stylesheets="@pics/UserStyles.css" text="Information">
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@pics/icons8_information_50px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="160.0" fitWidth="163.0" layoutX="360.0">
+                     <image>
+                        <Image url="@pics/Untitled.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="577.0" layoutY="266.0" mnemonicParsing="false" onAction="#makeDepositButton" prefHeight="76.0" prefWidth="184.0" style="-fx-border-radius: 30303030; -fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-border-color: #C0C0C0; -fx-border-width: 3; -fx-text-fill: white;" stylesheets="@pics/UserStyles.css" text="Deposit Money">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="60.0">
+                           <image>
+                              <Image url="@pics/icons8_deposit_80px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="376.0" layoutY="416.0" mnemonicParsing="false" onAction="#makeChangePassButton" prefHeight="55.0" prefWidth="147.0" style="-fx-border-radius: 30303030; -fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-border-color: #C0C0C0; -fx-border-width: 3; -fx-text-fill: white;" stylesheets="@pics/UserStyles.css" text="Change Password">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="36.0">
+                           <image>
+                              <Image url="@pics/icons/password%20reset.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="10.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

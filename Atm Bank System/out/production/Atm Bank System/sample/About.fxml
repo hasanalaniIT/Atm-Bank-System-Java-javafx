@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="536.0" prefWidth="931.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="27.0" prefHeight="482.0" prefWidth="866.0" style="-fx-background-color: #661519;">
+         <children>
+            <AnchorPane layoutX="31.0" layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="803.0" style="-fx-background-color: #2A2E37;">
+               <children>
+                  <Label layoutX="23.0" layoutY="14.0" prefHeight="296.0" prefWidth="779.0" text="This Application Was Done By: Hasan AL-Ani (B1905.090005) And Hamza Kosa(B1905.090020)&#10;&#10;We Made This Project To Inspire Banks To Do Similar Atm Machine Systems Beacuse Of Our &#10;Easy To Use Interface Ui And our Bug Free Strong And Secure Backend Code&#10;&#10;For More Information Or Help Please Contact One Of The Emails Listed Below:&#10;https://github.com/hasanalaniIT&#10;&#10;hasanalani@stu.aydin.edu.tr &#10;redfire5005@gmail.com&#10;hamzakosa@stu.aydin.edu.tr" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#bd3131" />
+                              <Stop color="#cab7b7" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button layoutX="328.0" layoutY="329.0" mnemonicParsing="false" onAction="#close" prefHeight="53.0" prefWidth="147.0" style="-fx-background-radius: 30; -fx-background-color: #B3373D; -fx-text-fill: white;" stylesheets="@pics/Styles.css" text="Close">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="38.0">
+                           <image>
+                              <Image url="@pics/icons/Close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

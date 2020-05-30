@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="521.0" prefWidth="637.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserPageController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="26.0" layoutY="28.0" prefHeight="466.0" prefWidth="585.0" style="-fx-background-color: #661519;">
+          <children>
+            <Pane layoutX="30.0" layoutY="23.0" prefHeight="420.0" prefWidth="527.0" style="-fx-background-color: #2A2E37;">
+               <children>
+                  <TextField fx:id="receiverid" layoutX="220.0" layoutY="45.0" prefHeight="45.0" prefWidth="250.0" promptText="Receiver ID" style="-fx-background-radius: 22; -fx-border-color: #661519; -fx-border-width: 3; -fx-border-radius: 20;">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="trnasamount" layoutX="220.0" layoutY="125.0" prefHeight="45.0" prefWidth="250.0" promptText="Amount" style="-fx-background-radius: 22; -fx-border-color: #661519; -fx-border-width: 3; -fx-border-radius: 20;">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="30.0" layoutY="54.0" style="-fx-text-fill: #B3373D;" text="Receiver ID" textFill="#e65100">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@pics/icons/Receiverid.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="134.0" style="-fx-text-fill: #B3373D;" text="Amount" textFill="#e65100">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@pics/icons/amount.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Button layoutX="371.0" layoutY="288.0" mnemonicParsing="false" onAction="#makeTransferButton" prefHeight="45.0" prefWidth="130.0" style="-fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-text-fill: white;" stylesheets="@pics/Styles.css" text="Transfer">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@pics/icons/transfer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="transferconf" layoutX="7.0" layoutY="206.0" prefHeight="204.0" prefWidth="344.0" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="371.0" layoutY="359.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="130.0" style="-fx-background-radius: 30303030; -fx-background-color: #B3373D; -fx-text-fill: white;" stylesheets="@pics/Styles.css" text="Go Back">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0">
+                           <image>
+                              <Image url="@pics/icons/go%20back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="transferinfo" layoutX="14.0" layoutY="218.0" prefHeight="188.0" prefWidth="344.0" textFill="#55ff00">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+          </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

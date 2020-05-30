@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseMoved="#makeLabel" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminLoginController">
+   <children>
+      <AnchorPane layoutX="32.0" layoutY="54.0" prefHeight="660.0" prefWidth="960.0" style="-fx-background-color: #661519;">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="30.0" layoutY="30.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2A2E37;">
+                <children>
+                  <Label alignment="TOP_CENTER" layoutX="21.0" layoutY="27.0" prefHeight="41.0" prefWidth="251.0" style="-fx-text-fill: #B3373D;" text="Administration Mode" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="281.0" layoutY="35.0" style="-fx-text-fill: #B3373D;" text="Admin Name : " textFill="#4c4177">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="503.0" layoutY="35.0" style="-fx-text-fill: #B3373D;" text="Admin ID : " textFill="#4c4177">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="adminname" layoutX="394.0" layoutY="35.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#df3c3c" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="adminid" layoutX="588.0" layoutY="35.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="WHITE" />
+                              <Stop color="#df3c3c" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button layoutX="528.0" layoutY="360.0" mnemonicParsing="false" onAction="#LoadUserInformation" prefHeight="60.0" prefWidth="191.0" style="-fx-text-fill: white; -fx-background-color: #B3373D; -fx-background-radius: 30303030;" stylesheets="@pics/Styles.css" text="View Users">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0">
+                           <image>
+                              <Image url="@pics/icons/load.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="528.0" layoutY="195.0" mnemonicParsing="false" onAction="#deleteUserButton" prefHeight="60.0" prefWidth="191.0" style="-fx-background-color: #B3373D; -fx-text-fill: white; -fx-background-radius: 30303030;" stylesheets="@pics/Styles.css" text="Delete User">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0">
+                           <image>
+                              <Image url="@pics/icons/delete.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="161.0" layoutY="195.0" mnemonicParsing="false" onAction="#makeAddButton" prefHeight="60.0" prefWidth="191.0" style="-fx-background-color: #B3373D; -fx-text-fill: white; -fx-background-radius: 30303030;" stylesheets="@pics/Styles.css" text="Add User">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0">
+                           <image>
+                              <Image url="@pics/icons/add%20user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="161.0" layoutY="360.0" mnemonicParsing="false" onAction="#resetPasswordButton" prefHeight="60.0" prefWidth="191.0" style="-fx-background-color: #B3373D; -fx-text-fill: white; -fx-background-radius: 30303030;" stylesheets="@pics/Styles.css" text="Change Password">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0">
+                           <image>
+                              <Image url="@pics/icons/changepass.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="147.0" fitWidth="220.0" layoutX="673.0" layoutY="8.0">
+                     <image>
+                        <Image url="@pics/Untitled.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="75.0" layoutY="505.0" mnemonicParsing="false" onAction="#goBack" prefHeight="60.0" prefWidth="146.0" style="-fx-text-fill: white; -fx-background-color: #B3373D; -fx-background-radius: 30303030;" stylesheets="@pics/Styles.css" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@pics/icons/go%20back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

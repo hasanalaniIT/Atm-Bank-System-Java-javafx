@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminLoginController">
+   <children>
+      <AnchorPane layoutX="32.0" layoutY="54.0" prefHeight="660.0" prefWidth="960.0" style="-fx-background-color: #661519;">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="30.0" layoutY="30.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2A2E37;">
+                <children>
+                  <TableView fx:id="UserTable" layoutX="84.0" layoutY="34.0" prefHeight="480.0" prefWidth="731.0">
+                    <columns>
+                      <TableColumn fx:id="IDcolumn" editable="false" prefWidth="116.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="ID" />
+                      <TableColumn fx:id="namecolumn" editable="false" prefWidth="233.0" resizable="false" sortable="false" text="Name" />
+                        <TableColumn fx:id="Passwordcolumn" prefWidth="151.0" text="Password" />
+                        <TableColumn fx:id="Balancecolumn" editable="false" prefWidth="230.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Balance" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="611.0" layoutY="533.0" mnemonicParsing="false" onAction="#LoadTable" prefHeight="46.0" prefWidth="210.0" style="-fx-text-fill: white; -fx-background-color: #B3373D; -fx-background-radius: 30303030;" stylesheets="@pics/Styles.css" text="LOAD INFFORMATION">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="26.0">
+                           <image>
+                              <Image url="@pics/icons/load.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="79.0" layoutY="533.0" mnemonicParsing="false" onAction="#goBackAdmin" prefHeight="46.0" prefWidth="130.0" style="-fx-text-fill: white; -fx-background-color: #B3373D; -fx-background-radius: 30303030;" stylesheets="@pics/Styles.css" text="Go Back">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="28.0">
+                           <image>
+                              <Image url="@pics/icons/go%20back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
