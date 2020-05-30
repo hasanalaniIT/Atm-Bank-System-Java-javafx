@@ -6,7 +6,7 @@ pass:1
 To Lunch the Jar run the batfile called run
 
 jdk used in project: jdk-11.0.7
-jdk used in project: javafx-sdk-11.0.2
+javafx sdk used in project: javafx-sdk-11.0.2
 
 if the ide not compile use this vm on main config
 with changing the path to javafx11 lib to your computer
