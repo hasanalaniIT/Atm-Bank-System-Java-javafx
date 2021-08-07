@@ -8,6 +8,7 @@ pass:1
 
 if jar does not work try to run the batfile called run
 
+you can use 1.8 it will work
 jdk used in project: jdk-11.0.7
 javafx sdk used in project: javafx-sdk-11.0.2
 ide used:IntelliJ IDEA 2020.1.1 x64
